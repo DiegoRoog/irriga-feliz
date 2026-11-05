@@ -1,0 +1,30 @@
+{
+  "name": "irrigafeliz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IrrigaFeliz — landing page cinematográfica com 300 frames controlados pelo scroll.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx --yes serve out",
+    "typecheck": "tsc --noEmit",
+    "frames:check": "node scripts/prepare-frames.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "@fontsource-variable/sora": "5.3.0",
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.4",
+    "@types/node": "^22.10.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "postcss": "8.5.32",
+    "tailwindcss": "4.3.4",
+    "typescript": "5.9.3"
+  }
+}

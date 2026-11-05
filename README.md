@@ -73,8 +73,10 @@ Os frames 13, 18, 23 … 298 (58 no total) são idênticos ao anterior (efeito d
 Foram mantidos — a sequência usa os 300 em ordem. Não houve conversão para WebP: a média é ~25 KB por JPEG
 e o ganho não compensa o risco de perder nitidez; a decisão pode ser reavaliada se o peso virar problema.
 
-## Publicação futura no GitHub Pages
+## GitHub Pages
 
-O build já gera uma exportação estática. Para servir o site sob `/irriga-feliz/`, configure
-o `basePath` no Next.js e aplique o mesmo prefixo às URLs dos JPEGs geradas por `lib/frames.ts`.
-Um workflow de GitHub Actions poderá gerar o build e publicar a pasta `out/` no Pages.
+O workflow de GitHub Actions publica a pasta `out/` a cada push em `main` e também pode ser
+executado manualmente na aba Actions. Durante o build, `NEXT_PUBLIC_BASE_PATH` recebe o
+prefixo do Pages para o Next.js e as URLs dos frames. Localmente, o prefixo padrão é vazio.
+
+[Abrir a landing page](https://diegoroog.github.io/irriga-feliz/)

@@ -13,7 +13,7 @@
 export const FRAME_COUNT = 300;
 export const FRAME_WIDTH = 1280;
 export const FRAME_HEIGHT = 720;
-export const FRAME_DIR = "/frames/desktop";
+export const FRAME_DIR = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/frames/desktop`;
 
 export const frameFile = (frame: number) =>
   `ezgif-frame-${String(Math.min(FRAME_COUNT, Math.max(1, Math.round(frame)))).padStart(3, "0")}.jpg`;
